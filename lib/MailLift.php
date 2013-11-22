@@ -159,7 +159,7 @@ class MailLiftLetter {
 
 	public function Send() { 
 		$url = MailLift::BuildUrl('letter'); 
-		$result = MailLift::Request(MAILLIFT_REQUEST_PUT, $url, $this->properties); 
+		$result = MailLift::Request(MAILLIFT_REQUEST_POST, $url, $this->properties); 
 
 		// Update object
 		$this->FromObject($result); 
@@ -180,7 +180,7 @@ class MailLiftLetter {
 			throw new MailLiftException("Uuid required to modify letter"); 
 
 		$url = MailLift::BuildUrl('letter/' . $this->Uuid); 
-		$result = MailLift::Request(MAILLIFT_REQUEST_POST, $url, $this->properties); 
+		$result = MailLift::Request(MAILLIFT_REQUEST_PUT, $url, $this->properties); 
 
 		// Update object
 		$this->FromObject($result);
