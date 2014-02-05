@@ -128,7 +128,10 @@ class MailLiftLetter {
 			'SenderAddress2'		=> null, 
 			'SenderCity'			=> null, 
 			'SenderStateCode'		=> null, 
-			'SenderPostCode'		=> null 
+			'SenderPostCode'		=> null, 
+
+			// MISC
+			'Notes'					=> null
 		); 
 
 

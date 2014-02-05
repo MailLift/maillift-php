@@ -21,6 +21,7 @@ $letter->RecipientPostCode		= '78666';
 $letter->MessageBody			= 'Test new letter message :)'; 
 //$letter->ScheduledDelivery		= "2017-09-12";
 
+$letter->Notes 					= 'Use default Crane & Co. stationery'; 
 
 // Send the letter via MailLift
 $letter->Send(); 
