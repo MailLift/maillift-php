@@ -13,13 +13,13 @@ MailLift::init(MAILLIFT_USERNAME, MAILLIFT_APIKEY);
 $letter = new MailLiftLetter; 
 
 // Fill in the minimum required fields to send a letter. 
-$letter->RecipientName1 		= 'Daniel Jurek'; 
-$letter->RecipientAddress1 		= '123 Fake St'; 
-$letter->RecipientCity			= 'San Marcos';
-$letter->RecipientStateCode		= 'TX';
-$letter->RecipientPostCode		= '78666'; 
-$letter->MessageBody			= 'Test new letter message :)'; 
-//$letter->ScheduledDelivery		= "2017-09-12";
+$letter->RecipientName1         = 'Daniel Jurek';
+$letter->RecipientAddress1      = '123 Fake St';
+$letter->RecipientCity          = 'San Marcos';
+$letter->RecipientStateCode     = 'TX';
+$letter->RecipientPostCode      = '78666';
+$letter->MessageBody            = 'Test new letter message :)';
+//$letter->ScheduledDelivery = "2017-09-12";
 
 $letter->Notes 					= 'Use default Crane & Co. stationery'; 
 
